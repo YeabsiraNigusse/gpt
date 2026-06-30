@@ -5,7 +5,7 @@ from torch.utils.data import Dataset, DataLoader
 
 
 class GPTDatasetV1(Dataset):
-    # stride tall as the number of atoms move we make
+    # stride tell us the number of input atoms move we make with consecutive 
     def __init__(self, text, toknizer, max_length, stride):
         self.input_ids = []
         self.target_ids = []
